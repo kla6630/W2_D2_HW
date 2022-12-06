@@ -69,7 +69,7 @@ if (TotalShoppingCart >= 50) {
 }
 if (TotalShoppingCart <= 50) {
   console.log(
-    "Oh noh, non hai diritto alla spedizione gratuita perciò pagherai " +
+    "Oh no, non hai diritto alla spedizione gratuita perciò pagherai " +
       TotalplusShipping +
       " €"
   );
@@ -77,7 +77,19 @@ if (TotalShoppingCart <= 50) {
 
 /* ESERCIZIO 6 */
 
-const Discount = Tot;
+const ProductsPriceArray02 = [10, 30, 20, 50];
+let sum = 0;
+
+for (let i = 0; i < ProductsPriceArray02.length; i++) {
+  sum += ProductsPriceArray02[i];
+}
+
+console.log(sum);
+
+const TotalShoppingCart = sum + (sum * 0, 2);
+const ShippingPrice = 10;
+const TotalplusShipping = TotalShoppingCart + ShippingPrice;
+
 if (TotalShoppingCart >= 50) {
   console.log(
     "Complimenti hai diritto alla spedizione gratuita e devi pagare solo! " +
@@ -87,8 +99,110 @@ if (TotalShoppingCart >= 50) {
 }
 if (TotalShoppingCart <= 50) {
   console.log(
-    "Oh noh, non hai diritto alla spedizione gratuita perciò pagherai " +
+    "Oh no, non hai diritto alla spedizione gratuita perciò pagherai " +
       TotalplusShipping +
       " €"
   );
 }
+
+/*ESERCIZIO 7 */
+
+/*Esercizio 07  vedi test.js */
+
+/* const ProductsPriceArray02 = [10, 30, 20, 50];
+let sum = 0;
+
+for (let i = 0; i < ProductsPriceArray02.length; i++) {
+  sum += ProductsPriceArray02[i];
+}
+
+console.log(sum);
+
+const TotalShoppingCart02 = (sum - (sum * 0.2));
+const ShippingPrice02 = 10;
+const TotalplusShipping02 = TotalShoppingCart02 + ShippingPrice02;
+
+if (TotalShoppingCart02 >= 50) {
+  console.log(
+    "Complimenti hai diritto alla spedizione gratuita e devi pagare solo! " +
+      TotalShoppingCart02 +
+      " €"
+  );
+}
+if (TotalShoppingCart02 <= 50) {
+  console.log(
+    "Oh no, non hai diritto alla spedizione gratuita perciò pagherai " +
+      TotalplusShipping02 +
+      " €"
+  );
+}
+*/
+
+/*ESERCIZIO 8 */
+
+const Algorithm8 = 3;
+
+if (typeof Algorithm8 === "number") {
+  console.log("Il valore inserito è un numero");
+} else if (typeof Algorithm8 !== "number") {
+  console.log("Il valore inserito non è un numero");
+}
+
+/*ESERCIZIO 9 */
+
+const number09 = 4447;
+
+if (number09 === 0) {
+  console.log("Il numero inserito è 0");
+} else if (number09 % 2 === 0) {
+  console.log("Il numero inserito è pari");
+} else {
+  console.log("Il numero inserito è dispari");
+}
+
+/*ESERCIZIO 10 */
+
+let val = 4;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else if (val >= 10) {
+  console.log("Uguale a 10 o maggiore");
+}
+
+/*ESERCIZIO 11 */
+
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+
+me.city = "Cagliari";
+console.log(me);
+
+/*ESERCIZIO 12 */
+
+delete me.lastName;
+console.log(me);
+
+/*ESERCIZIO 13 */
+
+delete me.skills[2];
+console.log(me);
+
+/*ESERCIZIO 14 */
+
+var array01 = [];
+console.log(array01);
+
+array01.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+console.log(array01);
+
+/*ESERCIZIO 15 */
+
+array01[9] = 100;
+
+console.log(array01);
