@@ -2,25 +2,60 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+const NumbersArray = [2000, 50000];
+const m = Math.max(...NumbersArray);
+
+console.log(m) 
+*/
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+const num = 5000
+if (num != 5)  {
+console.log("not equal")} 
+*/
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+const num2 = 5000
+const resto = (num2 % 5)
+
+if (resto === 0 )
+{console.log("E' divisibile per 5")}
+else {console.log("Non è divisibile per 5")} 
+*/
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*const num3 = 16;
+const num4 = 8;
+
+const numTGT = 8;
+
+const somma = num3 + num4;
+const sottrazione = num3 - num4;
+
+if (somma === numTGT) {
+  console.log("La loro somma è " + numTGT);
+}
+if (sottrazione === numTGT) {
+  console.log("La loro differenza è " + numTGT);
+}
+if (num3 === numTGT) {
+  console.log("Il primo numero corrisponde a " + numTGT);
+}
+if (num4 === numTGT) {
+  console.log("Il secondo numero corrisponde a " + numTGT);
+} */
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -28,7 +63,34 @@
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*const ProductsPriceArray = [10, 30, 20, 50];
+let sum = 0;
+
+for (let i = 0; i < ProductsPriceArray.length; i++) {
+  sum += ProductsPriceArray[i];
+}
+
+console.log(sum);
+
+const TotalShoppingCart = sum;
+const ShippingPrice = 10;
+const TotalplusShipping = TotalShoppingCart + ShippingPrice;
+
+if (TotalShoppingCart >= 50) {
+  console.log(
+    "Complimenti hai diritto alla spedizione gratuita e devi pagare solo! " +
+      TotalShoppingCart +
+      " €"
+  );
+}
+if (TotalShoppingCart <= 50) {
+  console.log(
+    "Oh noh, non hai diritto alla spedizione gratuita perciò pagherai " +
+      TotalplusShipping +
+      " €"
+  );
+}
+ */
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -76,10 +138,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -106,3 +168,5 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
